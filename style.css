@@ -119,7 +119,7 @@ take up screen as per the screen size available fore.g:- if 3 divs are in the wr
 
 .sidebar{
     width: 50px;
-    min-height: 70vh;
+    height:auto;
     background-color: #55DD33;
     position: fixed;
     top: 80px;
@@ -302,7 +302,6 @@ take up screen as per the screen size available fore.g:- if 3 divs are in the wr
     opacity: .8;
 }
 .credit{
-    margin-left: 50px;
     font-size: 22px;
     padding:20px 0px;
     text-align: center;
@@ -402,5 +401,59 @@ take up screen as per the screen size available fore.g:- if 3 divs are in the wr
     }
     .feature-desc{
         color:#55DD33;
+    }
+}
+@media only screen and (max-width:500px){
+    .menu-container{
+        display: none;
+    }
+    .feature-desc{
+        font-size: 14px;
+        
+        
+    }
+    .featured-content1{
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .featured-content2{
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .credit{
+        font-size: 14px;
+    }
+    .arrow{
+        font-size: 80px;
+    }
+    .featured-content1.active{
+        background:linear-gradient(to bottom,rgba(0,0,0,0),90%,
+    rgb(220, 247, 220)),linear-gradient(to left,rgba(0,0,0,0),90%,rgb(220, 247, 220)),url(cover/x11.jpg);
+    background-size: cover;
+    }
+    .featured-content2.active{
+        background:linear-gradient(to bottom,rgba(0,0,0,0),90%,
+    rgb(220, 247, 220)),linear-gradient(to left,rgba(0,0,0,0),90%,rgb(220, 247, 220)),url(cover/c2.jpg);
+    background-size: cover;
+    }
+    .featured-content1{
+        background:linear-gradient(to bottom,rgba(0,0,0,0),90%,
+    rgb(9, 10, 9)),linear-gradient(to left,rgba(0,0,0,0),90%,
+    rgb(11, 12, 11)),url(cover/x11.jpg);
+    background-size: cover;
+    }
+    .featured-content2{
+        background:linear-gradient(to bottom,rgba(0,0,0,0),90%,
+    rgb(0, 0, 0)),linear-gradient(to left,rgba(0,0,0,0),90%,rgb(0, 0, 0)),url(cover/c2.jpg);
+    background-size: cover;
+    }
+    .feature-desc{
+        color:#55DD33;
+    }
+    .sidebar{
+        display: none;
+    }
+    .content-container{
+        margin-left: 0px;
     }
 }
