@@ -450,10 +450,6 @@ take up screen as per the screen size available fore.g:- if 3 divs are in the wr
     .feature-desc{
         color:#55DD33;
     }
-    .sidebar{
-        display: none;
-    }
-    .content-container{
-        margin-left: 0px;
-    }
+    
+    
 }
