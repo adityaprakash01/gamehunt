@@ -52,20 +52,23 @@ take up screen as per the screen size available fore.g:- if 3 divs are in the wr
     font-size: 17px;
     cursor: pointer;
     padding-bottom: 3px;
+    
     position: relative;
 }
 .menu-list-items::after{
-    content: '';
+    content:'';
     position: absolute;
     width: 0px;
     height: 2px;
     left: 0;
     bottom:0;
     background-color: rgb(8, 7, 7);
+    border-bottom: 2px solid black;
     transition: all ease-in-out .5s;
   }
 .menu-list-items:hover::after{
     width: 100%;
+    left: 0;
   }
 
 .menu-list-items.active{
@@ -428,12 +431,13 @@ take up screen as per the screen size available fore.g:- if 3 divs are in the wr
     }
     .featured-content1.active{
         background:linear-gradient(to bottom,rgba(0,0,0,0),90%,
-    rgb(220, 247, 220)),linear-gradient(to left,rgba(0,0,0,0),90%,rgb(220, 247, 220)),url(cover/x11.jpg);
+    rgb(4, 5, 4)),linear-gradient(to left,rgba(0,0,0,0),90%,
+    rgb(7, 7, 7)),url(cover/x11.jpg);
     background-size: cover;
     }
     .featured-content2.active{
         background:linear-gradient(to bottom,rgba(0,0,0,0),90%,
-    rgb(220, 247, 220)),linear-gradient(to left,rgba(0,0,0,0),90%,rgb(220, 247, 220)),url(cover/c2.jpg);
+    rgb(0, 0, 0)),linear-gradient(to left,rgba(0,0,0,0),90%,rgb(0, 0, 0)),url(cover/c2.jpg);
     background-size: cover;
     }
     .featured-content1{
@@ -450,6 +454,10 @@ take up screen as per the screen size available fore.g:- if 3 divs are in the wr
     .feature-desc{
         color:#55DD33;
     }
-    
-    
+    .sidebar{
+        display: none;
+    }
+    .content-container{
+        margin-left: 0px;
+    }
 }
