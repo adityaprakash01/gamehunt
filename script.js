@@ -10,7 +10,7 @@ arrows.forEach((arrow,i)=>{
         const ratio=Math.floor(window.innerWidth/210);
         // ratio is for mobile view
         clickcounter++;
-        if(itemNumber-(5+clickcounter)+(6-ratio)>=0){
+        if(itemNumber-(5+clickcounter)+(5-ratio)>=0){
             // +(5-ratio) is for mobile view sliding 
             gamelist[i].style.transform=`translateX(${gamelist[i].computedStyleMap().get("transform")[0].x.value-240}px)`;
         }else{
